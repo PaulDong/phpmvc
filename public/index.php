@@ -14,18 +14,18 @@ require_once __DIR__ . '/../vendor/autoload.php';
 $dotenv = \Dotenv\Dotenv::createImmutable(dirname(__DIR__));
 $dotenv->load();
 $config = [
-    'userClass' => \app\models\User::class,
-    'db' => [
-        'dsn' => $_ENV['DB_DSN'],
-        'user' => $_ENV['DB_USER'],
-        'password' => $_ENV['DB_PASSWORD'],
-    ]
+  'userClass' => \app\models\User::class,
+  'db' => [
+    'dsn' => $_ENV['DB_DSN'],
+    'user' => $_ENV['DB_USER'],
+    'password' => $_ENV['DB_PASSWORD'],
+  ]
 ];
 
 $app = new Application(dirname(__DIR__), $config);
 
 $app->on(Application::EVENT_BEFORE_REQUEST, function(){
-    // echo "Before request from second installation";
+  // echo "Before request from second installation";
 });
 
 $app->router->get('/', [SiteController::class, 'home']);
@@ -43,8 +43,8 @@ $app->router->get('/profile/{id:\d+}/{username}', [SiteController::class, 'login
 // /profile/13
 // \/profile\/\w+
 
-// /profile/{id}/zura
-// /profile/12/zura
+// /profile/{id}/paul
+// /profile/12/paul
 
 // /{id}
 $app->run();

@@ -16,6 +16,6 @@ namespace mvcCore\exception;
  */
 class NotFoundException extends \Exception
 {
-    protected $message = 'Page not found';
-    protected $code = 404;
+  protected $message = 'Page not found';
+  protected $code = 404;
 }
