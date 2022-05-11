@@ -1,0 +1,17 @@
+{
+    "name": "pauldong/phpmvc-framework",
+    "authors": [
+        {
+            "name": "Paul Tung",
+            "email": "paul@calgah.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "app\\": "."
+        }
+    },
+    "require": {
+        "vlucas/phpdotenv": "^5.0"
+    }
+}
