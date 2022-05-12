@@ -5,7 +5,7 @@
  * Time: 10:01 AM
  */
 
-namespace mvcCore;
+namespace app\mvcCore;
 
 use mvcCore\exception\NotFoundException;
 

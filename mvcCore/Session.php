@@ -5,14 +5,14 @@
  * Time: 11:18 PM
  */
 
-namespace mvcCore;
+namespace app\mvcCore;
 
 
 /**
  * Class Session
  *
  * @author  Paul Dong <paul@calgah.com>
- * @package mvcCore
+ * @package app\mvcCore
  */
 class Session
 {

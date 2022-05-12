@@ -5,10 +5,10 @@
  * Time: 7:05 AM
  */
 
-namespace mvcCore\form;
+namespace app\mvcCore\form;
 
 
-use mvcCore\Model;
+use app\mvcCore\Model;
 
 /**
  * Class Field

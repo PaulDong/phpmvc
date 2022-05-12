@@ -5,17 +5,17 @@
  * Time: 11:33 AM
  */
 
-namespace mvcCore\middlewares;
+namespace app\mvcCore\middlewares;
 
 
-use mvcCore\Application;
-use mvcCore\exception\ForbiddenException;
+use app\mvcCore\Application;
+use app\mvcCore\exception\ForbiddenException;
 
 /**
  * Class AuthMiddleware
  *
  * @author  Paul Dong <paul@calgah.com>
- * @package mvcCore
+ * @package app\mvcCore
  */
 class AuthMiddleware extends BaseMiddleware
 {

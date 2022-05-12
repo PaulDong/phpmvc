@@ -5,9 +5,9 @@
  * Time: 9:57 AM
  */
 
-namespace mvcCore;
+namespace app\mvcCore;
 
-use mvcCore\db\Database;
+use app\mvcCore\db\Database;
 
 /**
  * Class Application

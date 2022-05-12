@@ -5,7 +5,7 @@
  * Time: 10:23 AM
  */
 
-namespace mvcCore;
+namespace app\mvcCore;
 
 /**
  * Class Request

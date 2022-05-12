@@ -5,16 +5,16 @@
  * Time: 8:09 AM
  */
 
-namespace mvcCore\db;
+namespace app\mvcCore\db;
 
 
-use mvcCore\Application;
+use app\mvcCore\Application;
 
 /**
  * Class Database
  *
  * @author  Paul Dong <paul@calgah.com>
- * @package mvcCore
+ * @package app\mvcCore
  */
 class Database
 {

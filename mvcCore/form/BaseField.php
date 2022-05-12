@@ -5,16 +5,16 @@
  * Time: 3:49 PM
  */
 
-namespace mvcCore\form;
+namespace app\mvcCore\form;
 
 
-use mvcCore\Model;
+use app\mvcCore\Model;
 
 /**
  * Class BaseField
  *
  * @author  Paul Dong <paul@calgah.com>
- * @package mvcCore\form
+ * @package app\mvcCore\form
  */
 abstract class BaseField
 {

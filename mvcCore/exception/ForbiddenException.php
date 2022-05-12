@@ -5,16 +5,16 @@
  * Time: 11:35 AM
  */
 
-namespace mvcCore\exception;
+namespace app\mvcCore\exception;
 
 
-use mvcCore\Application;
+use app\mvcCore\Application;
 
 /**
  * Class ForbiddenException
  *
  * @author  Paul Dong <paul@calgah.com>
- * @package mvcCore\exception
+ * @package app\mvcCore\exception
  */
 class ForbiddenException extends \Exception
 {

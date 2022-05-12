@@ -5,9 +5,9 @@
  * Time: 8:43 AM
  */
 
-namespace mvcCore;
+namespace app\mvcCore;
 
-use mvcCore\middlewares\BaseMiddleware;
+use app\mvcCore\middlewares\BaseMiddleware;
 /**
  * Class Controller
  *

@@ -5,15 +5,15 @@
  * Time: 10:13 AM
  */
 
-namespace mvcCore;
+namespace app\mvcCore;
 
-use mvcCore\db\DbModel;
+use app\mvcCore\db\DbModel;
 
 /**
  * Class UserModel
  *
  * @author  Paul Dong <paul@calgah.com>
- * @package mvcCore
+ * @package app\mvcCore
  */
 abstract class UserModel extends DbModel
 {

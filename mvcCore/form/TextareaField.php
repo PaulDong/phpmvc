@@ -5,14 +5,14 @@
  * Time: 3:49 PM
  */
 
-namespace mvcCore\form;
+namespace app\mvcCore\form;
 
 
 /**
  * Class TextareaField
  *
  * @author  Paul Dong <paul@calgah.com>
- * @package mvcCore\form
+ * @package app\mvcCore\form
  */
 class TextareaField extends BaseField
 {

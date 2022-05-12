@@ -5,14 +5,14 @@
  * Time: 2:45 PM
  */
 
-namespace mvcCore;
+namespace app\mvcCore;
 
 
 /**
  * Class View
  *
  * @author  Paul Dong <paul@calgah.com>
- * @package mvcCore
+ * @package app\mvcCore
  */
 class View
 {

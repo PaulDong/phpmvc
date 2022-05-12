@@ -5,14 +5,14 @@
  * Time: 11:43 AM
  */
 
-namespace mvcCore\exception;
+namespace app\mvcCore\exception;
 
 
 /**
  * Class NotFoundException
  *
  * @author  Paul Dong <paul@calgah.com>
- * @package mvcCore\exception
+ * @package app\mvcCore\exception
  */
 class NotFoundException extends \Exception
 {

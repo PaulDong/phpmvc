@@ -5,14 +5,14 @@
  * Time: 11:33 AM
  */
 
-namespace mvcCore\middlewares;
+namespace app\mvcCore\middlewares;
 
 
 /**
  * Class BaseMiddleware
  *
  * @author  Paul Dong <paul@calgah.com>
- * @package mvcCore
+ * @package app\mvcCore
  */
 abstract class BaseMiddleware
 {

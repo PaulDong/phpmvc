@@ -8,7 +8,7 @@
 
 use app\controllers\AboutController;
 use app\controllers\SiteController;
-use mvcCore\Application;
+use app\mvcCore\Application;
 
 require_once __DIR__ . '/../vendor/autoload.php';
 $dotenv = \Dotenv\Dotenv::createImmutable(dirname(__DIR__));

@@ -5,7 +5,7 @@
  * Time: 9:16 AM
  */
 
-namespace mvcCore;
+namespace app\mvcCore;
 
 
 /**
