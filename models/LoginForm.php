@@ -8,8 +8,8 @@
 namespace app\models;
 
 
-use mvcCore\Application;
-use mvcCore\Model;
+use app\mvcCore\Application;
+use app\mvcCore\Model;
 
 /**
  * Class LoginForm

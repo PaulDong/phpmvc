@@ -8,8 +8,8 @@
 namespace app\models;
 
 
-use mvcCore\DbModel;
-use mvcCore\UserModel;
+use app\mvcCore\DbModel;
+use app\mvcCore\UserModel;
 
 /**
  * Class Register

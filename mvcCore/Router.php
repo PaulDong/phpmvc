@@ -7,7 +7,7 @@
 
 namespace app\mvcCore;
 
-use mvcCore\exception\NotFoundException;
+use app\mvcCore\exception\NotFoundException;
 
 /**
  * Class Router

@@ -20,7 +20,7 @@ class Controller
   public string $action = '';
 
   /**
-   * @var \mvcCore\BaseMiddleware[]
+   * @var app\mvcCore\BaseMiddleware[]
    */
   protected array $middlewares = [];
 
@@ -40,7 +40,7 @@ class Controller
   }
 
   /**
-   * @return \mvcCore\middlewares\BaseMiddleware[]
+   * @return app\mvcCore\middlewares\BaseMiddleware[]
    */
   public function getMiddlewares(): array
   {

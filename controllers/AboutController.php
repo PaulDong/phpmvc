@@ -8,7 +8,7 @@
 namespace app\controllers;
 
 
-use mvcCore\Controller;
+use app\mvcCore\Controller;
 
 /**
  * Class AboutController

@@ -2,7 +2,7 @@
 
 /** @var $model \app\models\LoginForm */
 
-use mvcCore\form\Form;
+use app\mvcCore\form\Form;
 
 ?>
 

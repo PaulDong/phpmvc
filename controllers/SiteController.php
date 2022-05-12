@@ -8,11 +8,11 @@
 namespace app\controllers;
 
 
-use mvcCore\Application;
-use mvcCore\Controller;
-use mvcCore\middlewares\AuthMiddleware;
-use mvcCore\Request;
-use mvcCore\Response;
+use app\mvcCore\Application;
+use app\mvcCore\Controller;
+use app\mvcCore\middlewares\AuthMiddleware;
+use app\mvcCore\Request;
+use app\mvcCore\Response;
 use app\models\LoginForm;
 use app\models\User;
 

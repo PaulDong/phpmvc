@@ -1,7 +1,7 @@
 <?php
 /** @var $model \mvcCore\Model */
 
-use mvcCore\form\Form;
+use app\mvcCore\form\Form;
 
 $form = new Form();
 ?>
