@@ -18,8 +18,8 @@ use app\mvcCore\Controller;
  */
 class AboutController extends Controller
 {
-    public function index()
-    {
-        return $this->render('about');
-    }
+  public function index()
+  {
+    return $this->render('about');
+  }
 }

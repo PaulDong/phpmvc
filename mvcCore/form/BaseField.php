@@ -26,7 +26,7 @@ abstract class BaseField
   /**
    * Field constructor.
    *
-   * @param \mvcCore\Model $model
+   * @param \app\mvcCore\Model $model
    * @param string          $attribute
    */
   public function __construct(Model $model, string $attribute)

@@ -109,7 +109,7 @@ class Router
       }
       if (is_array($callback)) {
           /**
-           * @var $controller \mvcCore\Controller
+           * @var $controller \app\mvcCore\Controller
            */
           $controller = new $callback[0];
           $controller->action = $callback[1];
