@@ -34,7 +34,9 @@ class Database
   {
     $this->createMigrationsTable();
     $appliedMigrations = $this->getAppliedMigrations();
-
+    // echo '<pre>';
+    // var_dump($appliedMigrations);
+    // echo '</pre>';
     $newMigrations = [];
     $files = scandir(Application::$ROOT_DIR . '/migrations');
     $toApplyMigrations = array_diff($files, $appliedMigrations);

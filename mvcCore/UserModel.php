@@ -18,4 +18,6 @@ use app\mvcCore\db\DbModel;
 abstract class UserModel extends DbModel
 {
   abstract public function getDisplayName(): string;
+  abstract public function getUserFunctions(): array;
+  abstract public function getUserLevel(): int;
 }

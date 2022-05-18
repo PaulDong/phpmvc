@@ -32,15 +32,15 @@ class SiteController extends Controller
   public function home()
   {
     return $this->render('home', [
-      'name' => 'PaulTung'
+      'name' => 'BNLogic'
     ]);
   }
 
   public function login(Request $request)
   {
-    echo '<pre>';
-    var_dump($request->getBody(), $request->getRouteParam('id'));
-    echo '</pre>';
+    // echo '<pre>';
+    // var_dump($request->getBody(), $request->getRouteParam('id'));
+    // echo '</pre>';
     $loginForm = new LoginForm();
     if ($request->getMethod() === 'post') {
       $loginForm->loadData($request->getBody());
