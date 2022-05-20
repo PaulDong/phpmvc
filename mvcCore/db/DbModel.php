@@ -39,7 +39,7 @@ abstract class DbModel extends Model
     return true;
   }
 
-  public function update($where)
+  public function update($where = [])
   {
     $tableName = $this->tableName();
     $attributes = $this->attributes();
@@ -61,7 +61,7 @@ abstract class DbModel extends Model
     return Application::$app->db->prepare($sql);
   }
 
-  public static function findOne($where)
+  public static function findOne($where = [])
   {
     $tableName = static::tableName();
     $attributes = array_keys($where);
@@ -74,7 +74,7 @@ abstract class DbModel extends Model
     return $statement->fetchObject(static::class);
   }
 
-  public static function getAll($where)
+  public static function getAll($where = [])
   {
     $tableName = static::tableName();
     if(is_array($where)) {
@@ -91,7 +91,7 @@ abstract class DbModel extends Model
     return $statement->fetchAll(PDO::FETCH_ASSOC);
   }
   // column name or expression and where conditions
-  public static function getOneColumn($column, $where)
+  public static function getOneColumn($column ='', $where = [])
   {
     if(isset($column)) {
       $tableName = static::tableName();
