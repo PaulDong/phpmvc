@@ -39,6 +39,23 @@ abstract class DbModel extends Model
     return true;
   }
 
+  public function update($where)
+  {
+    $tableName = $this->tableName();
+    $attributes = $this->attributes();
+    $conditions = array_keys($where);
+    $statement = self::prepare("UPDATE $tableName SET ".implode(",", $attributes."=:$attributes" )."
+            WHERE ".implode("AND", array_map(fn($condition) => "$condition = :$condition", $conditions)).";");
+    foreach ($attributes as $attribute) {
+      $statement->bindValue(":$attribute", $this->{$attribute});
+    }
+    foreach ($where as $key => $item) {
+      $statement->bindValue(":$key", $item);
+    }
+    $statement->execute();
+    return true;
+  }
+
   public static function prepare($sql): \PDOStatement
   {
     return Application::$app->db->prepare($sql);
@@ -55,5 +72,43 @@ abstract class DbModel extends Model
     }
     $statement->execute();
     return $statement->fetchObject(static::class);
+  }
+
+  public static function getAll($where)
+  {
+    $tableName = static::tableName();
+    if(is_array($where)) {
+      $attributes = array_keys($where);
+      $sql = implode("AND", array_map(fn($attr) => "$attr = :$attr", $attributes));
+      $statement = self::prepare("SELECT * FROM $tableName WHERE $sql");
+      foreach ($where as $key => $item) {
+        $statement->bindValue(":$key", $item);
+      }
+    } else {
+      $statement = self::prepare("SELECT * FROM $tableName");
+    }
+    $statement->execute();
+    return $statement->fetchAll(PDO::FETCH_ASSOC);
+  }
+  // column name or expression and where conditions
+  public static function getOneColumn($column, $where)
+  {
+    if(isset($column)) {
+      $tableName = static::tableName();
+      if(is_array($where)) {
+        $attributes = array_keys($where);
+        $sql = implode("AND", array_map(fn($attr) => "$attr = :$attr", $attributes));
+        $statement = self::prepare("SELECT $column FROM $tableName WHERE $sql");
+        foreach ($where as $key => $item) {
+          $statement->bindValue(":$key", $item);
+        }
+      } else {
+        $statement = self::prepare("SELECT $column FROM $tableName");
+      }
+      $statement->execute();
+      return $statement->fetchAll(PDO::FETCH_COLUMN, 0);
+    } else {
+      return false;
+    }
   }
 }
