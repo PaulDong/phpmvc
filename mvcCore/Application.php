@@ -24,6 +24,7 @@ class Application
 
   public static Application $app;
   public static string $ROOT_DIR;
+  public static string $siteName = "PHPMCV";
   public string $userClass;
   public string $layout = 'main';
   public Router $router;
